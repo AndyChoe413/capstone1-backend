@@ -14,13 +14,13 @@
 .headerTitleSm {
     position: absolute;
     top: 12%;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .headerTitleLg {
     position: absolute;
-    top: 15%;
-    font-size: 100px;
+    top: 17%;
+    font-size: 80px;
 }
 
 .headerImg {

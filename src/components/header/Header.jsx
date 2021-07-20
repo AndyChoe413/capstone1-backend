@@ -4,8 +4,8 @@ export default function header() {
     return (
 			<div className="header">
 				<div className="headerTitles">
-					<span className="headerTitleSm">React & node</span>
-					<span className="headerTitleLg">Blog</span>
+					<span className="headerTitleSm">Andys</span>
+					<span className="headerTitleLg">Blog Page</span>
 				</div>
 				<img
 					src="https://wallpapercave.com/wp/wp3924888.jpg"

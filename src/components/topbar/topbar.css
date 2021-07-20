@@ -7,11 +7,12 @@
 	display: flex;
 	align-items: center;
 	font-family: "Josefin Sans", sans-serif;
+	z-index: 999;
 }
 
 .topLeft,
 .topRight {
-	flex: 3;
+	flex: 2;
 	display: flex;
 	align-items: center;
 	justify-content: center;
