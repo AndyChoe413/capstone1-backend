@@ -19,6 +19,7 @@ export default function Settings() {
 							<label htmlFor="fileInput">
 								<i className="profilePicIcon far fa-user"></i>
 							</label>
+							<p>Click to update photo</p>
 							<input type="file" id="fileInput" style={{ display: "none" }} />
 						</div>
 						<label>Username</label>
@@ -26,8 +27,8 @@ export default function Settings() {
 						<label>Email</label>
 						<input type="text" placeholder="Email" />
 						<label>Password</label>
-                    <input type="text" placeholder="Password" />
-                    <button className="settingsSubmit">Update</button>
+						<input type="text" placeholder="Password" />
+						<button className="settingsSubmit">Update</button>
 					</form>
 				</div>
 				<Sidebar />
