@@ -18,7 +18,7 @@ import {
 
 function App() {
 
-  const user = true;
+  const user = false;
 
   return (
     <Router>
@@ -30,11 +30,14 @@ function App() {
         <Route exact path="/register">
           {user ? <Home/> : <Register/>}
         </Route>
+         <Route exact path="/login">
+          {user ? <Home/> : <Login/>}
+        </Route>
         <Route exact path="/write">
-          <Write/>
+          {user ? <Write/> : <Register/>}
         </Route>
         <Route exact path="/settings">
-          <Settings/>
+           {user ? <settings/> : <Register/>}
         </Route>
          <Route exact path="/post/:postId">
           <Single/>

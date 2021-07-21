@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./login.css"
 
 export default function Login() {
@@ -19,7 +20,8 @@ export default function Login() {
 					/>
 					<button className="loginBtn">Login</button>
 				</form>
-				<button className="loginRegBtn">Register</button>
+			<button className="loginRegBtn">Register</button>
+			<Link to="/register">Register</Link>
 			</div>
 		);
 }
