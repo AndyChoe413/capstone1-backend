@@ -6,7 +6,10 @@ export default function sidebar() {
 			<div className="sidebar">
 				<div className="sidebarItem">
 					<span className="sidebarTitle">ABOUT ME</span>
-					<img src="../images/selfie.jpg" alt="selfie" />
+					<img
+						src="https://t3.ftcdn.net/jpg/03/91/19/22/360_F_391192211_2w5pQpFV1aozYQhcIw3FqA35vuTxJKrB.jpg"
+						alt="selfie"
+					/>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 						eiusmod tempor incididunt ut labore et dolore magna aliqua.
