@@ -24,8 +24,11 @@ export default function Register() {
 						type="password"
 						placeholder="Enter your password..."
 					/>
-					<button className="registerBtn">Register</button>
-				<Link className="link" to="/login">Login</Link>
+					<button className="registerBtn">
+						<Link className="link" to="/login">
+							Login
+						</Link>
+					</button>
 				</form>
 				<button className="registerLoginBtn">Login</button>
 			</div>

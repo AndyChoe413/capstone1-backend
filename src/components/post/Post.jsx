@@ -6,7 +6,7 @@ export default function post() {
 				<img
 					className="postImg"
 					src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/02/a0002487/img/basic/a0002487_main.jpg?20201116111704&q=80&rw=750&rh=536"
-					alt="image"
+					alt=""
 				/>
 				<div className="postInfo">
 					<div className="postNames">

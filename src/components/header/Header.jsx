@@ -9,7 +9,7 @@ export default function header() {
 				</div>
 				<img
 					src="https://wallpapercave.com/wp/wp3924888.jpg"
-					alt="image of Siargao island"
+					alt=""
 					className="headerImg"
 				/>
 			</div>

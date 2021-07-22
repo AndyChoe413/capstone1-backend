@@ -10,7 +10,7 @@
 }
 
 .loginTitle {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .loginForm {
@@ -27,6 +27,7 @@
     padding: 10px;
     background-color: white;
     border: none;
+    border-radius: 10px;
 }
 
 .loginBtn {
@@ -46,7 +47,8 @@
     background-color: lightskyblue;
     color: white;
     border-radius: 10px;
-    height: 30px;
-    width: 100px;
+    height: 35px;
+    width: 120px;
     font-weight: 800;
+    border: none;
 }

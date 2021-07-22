@@ -20,8 +20,9 @@ export default function Login() {
 					/>
 					<button className="loginBtn">Login</button>
 				</form>
-			<button className="loginRegBtn">Register</button>
-			<Link to="/register">Register</Link>
+				<button className="loginRegBtn">
+					<Link className="link" to="/register" >Register</Link>
+				</button>
 			</div>
 		);
 }

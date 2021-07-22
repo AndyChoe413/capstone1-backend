@@ -3,7 +3,7 @@ import "./topbar.css";
 
 export default function topBar() {
 
-	const user = false;
+	const user = true;
 
 	return (
 		<div className="top">
@@ -44,7 +44,7 @@ export default function topBar() {
 					<img
 						className="topImg"
 						src="https://www.sunchasingtravelers.com/wp-content/uploads/2020/09/alegria-beach-drone-view-1024x683.jpg"
-						alt="My image"
+						alt=""
 					/>
 				) : (
 					<ul className="topList">
