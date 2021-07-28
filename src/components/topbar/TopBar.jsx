@@ -3,7 +3,7 @@ import "./topbar.css";
 
 export default function topBar() {
 
-	const user = true;
+	const user = false;
 
 	return (
 		<div className="top">

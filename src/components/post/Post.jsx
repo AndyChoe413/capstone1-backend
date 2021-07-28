@@ -1,33 +1,27 @@
+import { Link } from "react-router-dom";
 import "./post.css"
 
-export default function post() {
+export default function post({post}) {
     return (
 			<div className="post">
-				<img
-					className="postImg"
-					src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/02/a0002487/img/basic/a0002487_main.jpg?20201116111704&q=80&rw=750&rh=536"
-					alt=""
-				/>
+				{post.photo && <img className="postImg" src={post.photo} alt="" />}
 				<div className="postInfo">
-					<div className="postNames">
-						<span className="postName">Places to visit</span>
-						<span className="postName">Places visited</span>
+					<div className="postCategories">
+						{post.categories.map((cats) => (
+							<span className="postCategories">{cats.name}</span>
+						))}
 					</div>
-					<span className="postTitle">Bucket list journeys</span>
+					{/* redirects page to single post when clicked that matches id of post */}
+					<Link to={`/post/${post._id}`} className="link">
+						<span className="postTitle">{post.title}</span>
+					</Link>
 					<hr />
-					<span className="postDate">1 hour ago</span>
+					<span className="postDate">
+						{/* new Date reformats date */}
+						{new Date(post.createdAt).toDateString()}
+					</span>
 				</div>
-				<p className="postDesc">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-					eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor
-					condimentum lacinia quis vel eros donec ac odio. Pharetra massa massa
-					ultricies mi quis hendrerit. Nec feugiat nisl pretium fusce id velit
-					ut tortor pretium. Lorem ipsum dolor sit amet, consectetur adipiscing
-					elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-					aliqua. Tortor condimentum lacinia quis vel eros donec ac odio.
-					Pharetra massa massa ultricies mi quis hendrerit. Nec feugiat nisl
-					pretium fusce id velit ut tortor pretium.
-				</p>
+				<p className="postDesc">{post.desc}</p>
 			</div>
 		);
 }
