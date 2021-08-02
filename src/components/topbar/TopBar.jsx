@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 import "./topbar.css";
 
-export default function topBar() {
-
-	const user = false;
-
+//functional component does not have this or state
+export default function topBar(props) {
+console.log(props)
 	return (
 		<div className="top">
 			<div className="topLeft">
@@ -35,12 +34,15 @@ export default function topBar() {
 							WRITE
 						</Link>
 					</li>
-					<li className="topListItem">{user && "LOGOUT"}</li>
+					<li className="topListItem"
+						//being brought in from App.js as a prop
+						onClick={()=>props.handleUserLogout()}>
+						{props.user && "LOGOUT"}
+					</li>
 				</ul>
 			</div>
 			<div className="topRight">
-
-				{user ? (
+				{props.user ? (
 					<img
 						className="topImg"
 						src="https://www.sunchasingtravelers.com/wp-content/uploads/2020/09/alegria-beach-drone-view-1024x683.jpg"

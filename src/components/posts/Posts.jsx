@@ -1,17 +1,16 @@
 import Post from "../post/Post";
 import "./posts.css"
 
-
-export default function Posts({posts}) {
-    return (
+//Renders all post by id to home page
+export default function Posts(props) {
+	console.log(props)
+	console.log("post page");
+	return (
 		<div className="posts">
-			{posts.map((post) => (
-				// console.log(post._id)
-				<Post
-					key={post._id}
-					post={post}
-				/>
-			))}
+			{props.posts.map((post) => {
+				// console.log(post._id);
+				return <Post key={post._id} post={post} />;
+			})}
 		</div>
-		);
+	);
 }
