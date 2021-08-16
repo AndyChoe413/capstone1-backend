@@ -5,11 +5,8 @@ import axios from "axios";
 import "./single.css";
 
 
-
 export class Single extends Component {
-
    
-
     state = {
         post: null
     }

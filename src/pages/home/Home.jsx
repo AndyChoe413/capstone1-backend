@@ -4,7 +4,7 @@ import Posts from "../../components/posts/Posts"
 import Sidebar from "../../components/sideBar/Sidebar"
 import axios from "axios"
 import jwtDecode from "jwt-decode";
-
+import GoogleMap from '../../components/map/GoogleMap'
 
 
 import "./home.css"
@@ -45,19 +45,19 @@ export class Home extends Component {
 
     render() {
         	return (
-                <>
-            {/* Header component passed in from Header */}
-			<Header />
-                <div className="home">
-                        
-				{/* pass the props into Posts posts={posts}  brings in all the posts created by user onto home page*/}
-                <Posts posts={this.state.posts} />
-                        
-                {/*Sidebar component */}
-				<Sidebar />
-			</div>
-		</>
-	);
+						<>
+							{/* Header component passed in from Header */}
+							<Header />
+							<div className='home'>
+								<GoogleMap className='google-map' />
+								{/* pass the props into Posts posts={posts}  brings in all the posts created by user onto home page*/}
+								<Posts posts={this.state.posts} />
+
+								{/*Sidebar component */}
+								<Sidebar />
+							</div>
+						</>
+					);
     }
 }
 
